@@ -37,7 +37,7 @@ router.post('/', [
       let user = await User.findOne({ email });  // ES6 equal email: email(req.body.email)
 
       if (user) {
-        return res.status(400).json({ errors: [{ msg: [{ msg: 'User already exist' }] }] });
+        return res.status(400).json({ errors: [{ msg: 'User already exist' }] });
       }
 
       // Get users gravatar 
