@@ -1,4 +1,6 @@
-const ProfileSchema = new mongoose.schema({
+const mongoose = require('mongoose');
+
+const ProfileSchema = new mongoose.Schema({
 
   // Associate with the user model
   user: {
