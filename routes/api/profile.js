@@ -232,7 +232,7 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
     // Get remove index
     const removeIndex = profile.experience
       .map(item => item.id)
-      .indexOf(req.param.exp_id);
+      .indexOf(req.params.exp_id);
 
     profile.experience.splice(removeIndex, 1);
 
@@ -317,7 +317,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
     // Get remove index
     const removeIndex = profile.education
       .map(item => item.id)
-      .indexOf(req.param.edu_id);
+      .indexOf(req.params.edu_id);
 
     profile.education.splice(removeIndex, 1);
 
