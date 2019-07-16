@@ -1,4 +1,1 @@
-{
-  "mongoURI": "mongodb+srv://Mike:nodeTest@cluster0-5hg7k.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "mysterycontent"
-}
+{}
